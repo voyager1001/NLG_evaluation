@@ -9,7 +9,9 @@ Original file is located at
 
 # THIS IS A NON-GPU CODE
 # IMPORTING THE LIBRARIES
-!pip install bert-embedding
+import os
+os.system('pip install bert-embedding')
+os.system('pip install -r requirements.txt')
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from bert_embedding import BertEmbedding
