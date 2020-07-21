@@ -11,7 +11,7 @@ Original file is located at
 # IMPORTING THE LIBRARIES
 import os
 os.system('pip install bert-embedding')
-os.system('pip install -r requirements.txt')
+os.system('pip install -r requirements_bertscore.txt')
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from bert_embedding import BertEmbedding
