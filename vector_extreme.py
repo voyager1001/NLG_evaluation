@@ -30,12 +30,12 @@ def process_input():
     for index,j in enumerate(hyp.split(' ')):
       print(embeddings_dict[str(j)])
       hyp_embd[index,:]=embeddings_dict[j]
-    hyp_embd=np.sum(hyp_embd,axis=0)/len(hyp.split(' '))
+    hyp_embd=np.max(hyp_embd)
     for p,ref in enumerate(ref_list[:-1]):
       ref_embd=np.zeros((len(ref.split(' ')),300))
       for alpha,q in enumerate(ref.split(' ')):
         ref_embd[alpha,:]=embeddings_dict[q]
-      ref_embd=np.sum(ref_embd,axis=0)/len(ref.split(' '))
+      ref_embd=np.max(ref_embd)
       c=0
       for l in range(0,300):
         c+=hyp_embd[0,l]*ref_embd[0,l]
