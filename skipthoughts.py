@@ -12,7 +12,7 @@ import torch
 from torch.autograd import Variable
 import sys
 import numpy as np
-
+import skipthoughts
 def process_input(ref_list,cand_list):
   max_score=0
   score_sum=0
@@ -47,7 +47,6 @@ def get_embeddings(vocab_list,i1,i2):
     i2 += padd
   elif len(i2) > len(i1):
     i1 += padd
-  sys.path.append('skip-thoughts.torch/pytorch')
   from skipthoughts import BiSkip
   dir_st = 'data/skip-thoughts'
   biskip = BiSkip(dir_st, vocab_list)
