@@ -1,0 +1,30 @@
+SICK-TRAIN ------->
+For 1-gram -
+ The pearson's correlation coefficient is 0.3948078295629249 and 2-tailed p-value is 9.318922654052886e-168.
+ The spearman's coorelation coefficient is 0.4105518273324942 and the  pvalue is 1.4782378654510494e-182.
+for 2-gram - 
+ The pearson's correlation coefficient is (0.4940077050498718) and 2-tailed p-value is  1.3199099975943739e-275.
+ The spearman's coorelation coefficient is 0.4873596381437595 and the  pvalue is 3.309733952842967e-267. 
+for 3-gram - 
+ The pearson's correlation coefficient is 0.5363387042119793 and 2-tailed p-value is  , 0.0.
+ The spearman's coorelation coefficient is 0.515683868232628 and the  pvalue is 2.549977928706107e-304). 
+ For 4-gram - 
+  The pearson's correlation coefficient is (0.5549059246485512 and 2-tailed p-value is   0.0)
+  The spearman's coorelation coefficient is 0.5300140482778296,  and the  pvalue is 0.0
+
+
+SICK-TEST------>
+
+1-gram--
+    pearson - (0.39705886817509356, 9.43138374100227e-186)
+    spearman - (correlation=0.3998573780906581, pvalue=1.3687302171381191e-188)
+2-gram --
+    pearson - (0.495089624329805, 4.405651844026844e-303)
+    SpearmanrResult(correlation=0.47851342259881163, pvalue=1.9119415688329993e-280)
+3 - gram --
+    pearson - (0.5373978750256073, 0.0)
+    SpearmanrResult(correlation=0.509286154479837, pvalue=0.0)
+4 - gram -- 
+    pearson - (0.5562992989350837, 0.0)
+    SpearmanrResult(correlation=0.5251114627834987, pvalue=0.0)
+    
