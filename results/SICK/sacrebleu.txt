@@ -1,2 +1,8 @@
+-------------SICK TRAIN----------------
 Pearson's coorelation coefficient - (0.4749141241278471, 5.660738752329983e-252)
 SpearmanrResult(correlation=0.5120565601665527, pvalue=2.2766702328300566e-299)
+
+
+----------------SICK TEST-----------------------
+Pearson's -- (0.46454156956163756, 2.60615540919937e-262)
+SpearmanrResult(correlation=0.5015830849688335, pvalue=0.0)

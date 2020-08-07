@@ -1,0 +1,30 @@
+----------SICK TRAIN -----------
+
+ROUGE - 1 :
+(0.5661635826359139, 0.0)
+SpearmanrResult(correlation=0.5398111128290869, pvalue=0.0)
+
+ROUGE - 2 :
+(0.5035972260708592, 4.7090523311848664e-288)
+SpearmanrResult(correlation=0.49868027751895416, pvalue=1.2734447641898951e-281)
+
+ROUGE - L :
+(0.5246335139301942, 8.543825e-317)
+SpearmanrResult(correlation=0.5076480814736026, pvalue=1.9684376942308683e-293)
+
+
+-------------SICK TEST ---------------------
+
+ROUFE -1 :
+(0.5664686921715455, 0.0)
+SpearmanrResult(correlation=0.5352720521150092, pvalue=0.0)
+
+
+ROUGE - 2 :
+(0.49328342715661827, 1.4849222711507208e-300)
+SpearmanrResult(correlation=0.48610002124791724, pvalue=1.1900251108837188e-290) 
+
+
+ROUGE- L :
+(0.524456150298549, 0.0)
+SpearmanrResult(correlation=0.5043038399018002, pvalue=0.0)

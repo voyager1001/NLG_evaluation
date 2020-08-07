@@ -1,2 +1,30 @@
+-------- SICK - TRAIN ------(ORDER = N-GRAM)
+
+ORDER = 1
 Pearson's coorelation coefficient - (0.6190613208210747, 0.0)
 SpearmanrResult(correlation=0.611301657525342, pvalue=0.0)
+ORDER = 2
+(0.6190613208210747, 0.0)
+SpearmanrResult(correlation=0.611301657525342, pvalue=0.0)
+ORDER = 3
+(0.6190613208210747, 0.0)
+SpearmanrResult(correlation=0.611301657525342, pvalue=0.0)
+ORDER = 4
+(0.6190613208210747, 0.0)
+SpearmanrResult(correlation=0.611301657525342, pvalue=0.0)
+
+
+
+----------SICK - TEST ------(ORDER = N-GRAM)
+ORDER = 1
+(0.6140159216099599, 0.0)
+SpearmanrResult(correlation=0.6034875293041749, pvalue=0.0)
+ORDER = 2
+(0.6140159216099599, 0.0)
+SpearmanrResult(correlation=0.6034875293041749, pvalue=0.0)
+ORDER = 3
+(0.6140159216099599, 0.0)
+SpearmanrResult(correlation=0.6034875293041749, pvalue=0.0)
+ORDER = 4
+(0.6140159216099599, 0.0)
+SpearmanrResult(correlation=0.6034875293041749, pvalue=0.0)
