@@ -12,7 +12,6 @@ os.system('unzip glove.6B.zip')
 import numpy as np
 import math
 import itertools
-model = model.WordEmbedding(model_fn="./glove.6B/glove.6B.300d.txt")
 embeddings_dict = {}
 with open("glove.6B.300d.txt", 'r') as f:
   for line in f:

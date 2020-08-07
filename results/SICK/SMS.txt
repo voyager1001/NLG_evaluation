@@ -1,2 +1,12 @@
 ----------------SICK TRAIN ---------------
 
+WORD2VEC -----
+(0.46246898338915815, 2.3303112707686003e-237)
+SpearmanrResult(correlation=0.5673657885382793, pvalue=0.0)
+
+SPACY -----
+(-0.667048062167885, 0.0)
+SpearmanrResult(correlation=-0.5762219523203369, pvalue=0.0)
+
+GLOVE -----
+

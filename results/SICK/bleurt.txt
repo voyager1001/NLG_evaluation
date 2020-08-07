@@ -1,0 +1,8 @@
+---------------SICK TRAIN-------------
+(0.6495722314941036, 0.0)
+SpearmanrResult(correlation=0.6003079497957441, pvalue=0.0)
+
+
+---------------SICK TEST -------------------
+(0.6484173239894294, 0.0)
+SpearmanrResult(correlation=0.5966351163750874, pvalue=0.0)
