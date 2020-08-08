@@ -28,10 +28,18 @@ def process_input(ref_list,hypo_list):
   for i,hyp_sent in enumerate(hypo_list[:-1]):
     for j, hyp in enumerate(hyp_sent.split(' ')):
       count += 1
-      i1 = embeddings_dict[hyp]
+      a=hyp.lower()
+      try:
+        i1 = embeddings_dict[a]
+      except KeyError :
+        i1= np.zeros((300,1))
       for k,ref_sent in enumerate(ref_list[:-1]):
         for l,ref in enumerate(ref_sent.split(' ')):
-          i2 = embeddings_dict[ref]
+          b=ref.lower()
+          try:
+            i2 = embeddings_dict[b]
+          except KeyError :
+            i2 = np.zeros((300,1))
           score=sim_score(i1,i2)
           max_score=max(max_score,score)
       score_sum += max_score
