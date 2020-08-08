@@ -8,5 +8,24 @@ SPACY -----
 (-0.667048062167885, 0.0)
 SpearmanrResult(correlation=-0.5762219523203369, pvalue=0.0)
 
-GLOVE -----
+GLOVE--------
+(0.4572334951049935, 2.1710771008296728e-231)
+SpearmanrResult(correlation=0.5045791516199742, pvalue=2.375591608192229e-289)
 
+
+
+----------------SICK TEST ----------------------
+
+WORD2VEC---------
+(0.45994124586238405, 1.6015531926123192e-256)
+SpearmanrResult(correlation=0.5681079658690673, pvalue=0.0)
+
+
+SPACY-----------
+(-0.6657535727136159, 0.0)
+SpearmanrResult(correlation=-0.5681626331197988, pvalue=0.0)
+
+
+GLOVE -----
+(0.4449433176760376, 2.953685993563749e-238)
+SpearmanrResult(correlation=0.4893221997489099, pvalue=4.595778932326576e-295)
