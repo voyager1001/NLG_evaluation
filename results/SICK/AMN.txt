@@ -1,0 +1,16 @@
+-----------------SICK TRAIN---------------
+AUTOSUMM --
+(0.5640428658410943, 0.0)
+SpearmanrResult(correlation=0.554900641038067, pvalue=0.0)
+
+MEGOG -----
+(0.5640428658410943, 0.0)
+SpearmanrResult(correlation=0.554900641038067, pvalue=0.0)
+
+NPOWER ------
+(0.5640428958808134, 0.0)
+SpearmanrResult(correlation=0.5548978028452188, pvalue=0.0)
+
+
+
+---------------------SICK TEST -------------------
