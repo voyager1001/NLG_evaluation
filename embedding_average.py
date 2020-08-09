@@ -21,7 +21,7 @@ with open("glove.6B.300d.txt", 'r') as f:
     vector = np.asarray(values[1:], "float32")
     embeddings_dict[word] = vector
 
-def process_input():
+def process_input(hypo_list,ref_list):
   import numpy as np
   max_score=0
   score_sum=0
