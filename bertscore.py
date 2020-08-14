@@ -18,13 +18,18 @@ from bert_embedding import BertEmbedding
 bert_embedding = BertEmbedding(model='bert_24_1024_16', dataset_name='book_corpus_wiki_en_cased')
 
 def get_embedding_matrix(ref_sent,cand_sent):
-  print(ref_sent)
   ref_array=np.ones((len(ref_sent),1024))
   cand_array=np.ones((len(cand_sent),1024))
   for index,ref in enumerate(ref_sent):
-    ref_array[index,:]=np.array(ref[1])
+    b=np.array(ref[1])
+    if b.shape[0] != 1:
+      b=(np.sum(np.array(ref[1]),axis=0))/(np.array(ref[1])).shape[0]
+    ref_array[index,:]=np.array(b)
   for index,cand in enumerate(cand_sent):
-    cand_array[index,:]=np.array(cand[1])
+    b=np.array(cand[1])
+    if b.shape[0] != 1:
+      b=(np.sum(np.array(cand[1]),axis=0))/(np.array(cand[1])).shape[0]
+    cand_array[index,:]=np.array(b)
   return ref_array,cand_array
 
 def get_weights(l):
@@ -41,6 +46,16 @@ def get_weights(l):
 def cos_similarity(ref_array,cand_array):
   result=cosine_similarity(cand_array,Y=ref_array)
   return result
+
+
+def fscore(ref_array,cand_array):
+  res_array = ref_array.dot(cand_array.transpose)
+  pres = np.max(res_array, axis = 0) / (np.linalg.norm(ref_array)) 
+  re = np.array(res_array,axis = 1) / (np.linalg.norm(cand_array))
+  f_score = ( 2 * pres * re)/(pres+ re)
+  return f_score 
+  
+
 
 def final_score(result,weights):
   final_score=np.sum(np.multiply(result,weights))/(np.sum(weights))
@@ -63,6 +78,7 @@ if __name__=="__main__":
     # TAKING WEIGHTS INPUT
     weights=get_weights(len(cand_sent))  
     #CALCULATING FINAL SCORE
-    f_score=final_score(result,weights)
+    cos_score = final_score(result,weights)
+    f_score = fscore(ref_array,cand_array)
     print("The BERTScore for the first sentence is : {}".format(f_score))
 
