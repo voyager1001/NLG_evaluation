@@ -1,0 +1,3 @@
+Spacy --- All similarity scores between 0.35 and 0.40.
+Word2Vector ---- All similarity scores between 0.35 and 0.40.
+Glove ----- 
